@@ -34,6 +34,8 @@ const edel = {
     }
 }
 
+
+
 // Dot Notation Usage
 console.log(ernie.age);
 console.log(ernie.breed);
