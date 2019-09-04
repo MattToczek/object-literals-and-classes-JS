@@ -41,6 +41,8 @@ const myString = {
 	}
 }
 
+myString.string = "I manipulated this string using JS."
+
 myString.characters = myString.string.length;
 
 var numWords = myString.countWords();
