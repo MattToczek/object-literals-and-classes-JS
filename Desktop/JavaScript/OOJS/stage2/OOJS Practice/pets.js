@@ -31,3 +31,16 @@ console.log(ernie);
 ernie['age'] = 3;
 ernie['color'] = 'white';
 console.log(ernie);
+
+// accessing string values inside object literals
+const myString = {
+	string: "Strings are easy to manipulate.",
+	countWords: function(){
+		const wordArray = this.string.split(' ');
+		return wordArray.length;
+	}
+}
+
+myString.characters = myString.string.length;
+
+var numWords = myString.countWords();
