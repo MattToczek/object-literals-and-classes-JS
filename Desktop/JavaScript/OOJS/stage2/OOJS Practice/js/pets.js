@@ -6,6 +6,18 @@ class Pet {
     this.sound = sound;
   }
 
+  get activity() {
+    const today = new Date();
+    let hour = today.gethours();
+
+    if (hour > 8 && <= 20) {
+      return 'playing';
+    } else {
+      return 'sleeping';
+    }
+
+  }
+
   speak(){
     console.log(this.sound);
   }
