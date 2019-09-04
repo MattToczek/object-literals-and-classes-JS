@@ -1,38 +1,20 @@
-const ernie = {
-    animal: 'dog',
-    age: '1',
-    breed: 'pug',
-    bark: function(){
-        console.log('Woof!');
-    }
+class Pet {
+  constructor(animal, age, breed, sound) {
+    this.animal=animal;
+    this.age=age;
+    this.breed=breed;
+    this.sound = sound;
+  }
+
+  speak(){
+    console.log(this.sound);
+  }
 }
 
-const vera = {
-    animal: 'dog',
-    age: 8,
-    breed: 'Border Collie',
-    bark: function(){
-        console.log('Woof!');
-    }
-}
-
-const scofield = {
-    animal: 'dog',
-    age: 6,
-    breed: 'Doberman',
-    bark: function(){
-        console.log('Woof!');
-    }
-}
-
-const edel = {
-    animal: 'dog',
-    age: 7,
-    breed: 'German Shothaired Pointer',
-    bark: function(){
-        console.log('Woof!');
-    }
-}
+const ernie = new Pet('dog', 1, 'Pug', 'yip yip');
+const vera = new Pet('dog', 8, 'Border Collie', 'woof woof');
+const scofield = new Pet('dog', 6, 'Doberman', 'grrrrrrrr');
+const edel = new Pet('dog', 7, 'German Shorthaired Pointer', 'bork bork');
 
 
 
@@ -44,7 +26,7 @@ ernie.bark();
 // Bracket Notation Usage
 console.log(ernie['age']);
 console.log(ernie['breed']);
-ernie['bark']();
+
 
 // Using Brackets and variables to Access properties
 let prop = 'breed';
