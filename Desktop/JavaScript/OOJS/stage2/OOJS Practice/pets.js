@@ -25,6 +25,15 @@ const scofield = {
     }
 }
 
+const edel = {
+    animal: 'dog',
+    age: 7,
+    breed: 'German Shothaired Pointer',
+    bark: function(){
+        console.log('Woof!');
+    }
+}
+
 // Dot Notation Usage
 console.log(ernie.age);
 console.log(ernie.breed);
