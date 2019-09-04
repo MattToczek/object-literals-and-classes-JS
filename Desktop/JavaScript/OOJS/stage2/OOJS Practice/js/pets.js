@@ -10,7 +10,10 @@ class Pet {
     const today = new Date();
     let hour = today.getHours();
 
-    if (hour > 8 && hour <= 20) {
+    if (hour > 9 && hour <= 10 || hour > 17 && hour <= 18) {
+      return 'eating';
+    }
+    else if (hour > 8 && hour <= 20) {
       return 'playing';
     } else {
       return 'sleeping';
