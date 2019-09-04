@@ -8,9 +8,9 @@ class Pet {
 
   get activity() {
     const today = new Date();
-    let hour = today.gethours();
+    let hour = today.getHours();
 
-    if (hour > 8 && <= 20) {
+    if (hour > 8 && hour <= 20) {
       return 'playing';
     } else {
       return 'sleeping';
@@ -33,7 +33,8 @@ const edel = new Pet('dog', 7, 'German Shorthaired Pointer', 'bork bork');
 // Dot Notation Usage
 console.log(ernie.age);
 console.log(ernie.breed);
-ernie.bark();
+console.log(ernie.activity);
+
 
 // Bracket Notation Usage
 console.log(ernie['age']);
