@@ -7,6 +7,24 @@ const ernie = {
     }
 }
 
+const vera = {
+    animal: 'dog',
+    age: 8,
+    breed: 'Border Collie',
+    bark: function(){
+        console.log('Woof!');
+    }
+}
+
+const scofield = {
+    animal: 'dog',
+    age: 6,
+    breed: 'Doberman',
+    bark: function(){
+        console.log('Woof!');
+    }
+}
+
 // Dot Notation Usage
 console.log(ernie.age);
 console.log(ernie.breed);
