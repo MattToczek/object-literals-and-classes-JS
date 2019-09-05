@@ -21,7 +21,7 @@ class Pet {
   }
 
   get owner() {
-    return this._owner
+    return this._owner;
   }
 
   set owner(owner){
@@ -34,12 +34,30 @@ class Pet {
   }
 }
 
+class Owner {
+  constructor(name, address){
+    this.name = name;
+    this.address = address;
+  }
+
+  set phone(phone){
+    const phoneNormalised = phone.replace(/[^0-9]/g, '');
+    this._phone = phoneNormalised;
+  }
+
+  get phone(){
+    return this._phone;
+  }
+}
+
+
 const ernie = new Pet('dog', 1, 'Pug', 'yip yip');
 const vera = new Pet('dog', 8, 'Border Collie', 'woof woof');
 const scofield = new Pet('dog', 6, 'Doberman', 'grrrrrrrr');
 const edel = new Pet('dog', 7, 'German Shorthaired Pointer', 'bork bork');
 
-ernie.owner = 'Ashley';
+ernie.owner = new Owner('Ashley', '123 Fake Street, Faketon');
+ernie.owner.phone = '(01234) 3798-3789';
 console.log(ernie.owner);
 
 // Dot Notation Usage
